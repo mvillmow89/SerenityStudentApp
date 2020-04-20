@@ -81,6 +81,7 @@ public class CreateStudentDataDriven extends TestBase {
 	public void createMultipleStudents() {
 		ArrayList<String> courses = new ArrayList<String>();
 		courses.add(course);
-		steps.createStudent(firstName, lastName, email, programme, courses);
+		steps.createStudent(firstName, lastName, email, programme, courses)
+		.statusCode(201);
 	}
 }

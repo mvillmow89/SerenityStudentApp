@@ -66,11 +66,6 @@ public class FirstSerenityTest {
 		file.exists();
 	}
 	
-	@Test
-	public void thisIsACompromisedTest() throws Exception {
-		throw new Exception();
-	}
-	
 	@Manual
 	@Test
 	public void thisIsAManualTest() {

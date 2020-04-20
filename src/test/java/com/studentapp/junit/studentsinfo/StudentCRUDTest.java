@@ -42,8 +42,7 @@ public class StudentCRUDTest extends TestBase {
 		courses.add("C++");
 		
 		steps.createStudent(firstName, lastName, email, programm, courses)
-		.statusCode(201)
-		.spec(ReusableSpecifications.getGenericResponseSpec());
+		.statusCode(201);
 	}
 	
 	@Title("Verify the New Student Was Added To the Application")

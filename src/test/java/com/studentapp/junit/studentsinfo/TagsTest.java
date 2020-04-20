@@ -56,7 +56,6 @@ public class TagsTest extends TestBase {
 		rest().given().when()
 		.get("/listsfkh")
 		.then()
-		.statusCode(400)
-		.log().all();
+		.statusCode(400);
 	}
 }

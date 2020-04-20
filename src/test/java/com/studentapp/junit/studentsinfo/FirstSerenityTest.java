@@ -30,8 +30,6 @@ public class FirstSerenityTest {
 		.when()
 		.get("/list")
 		.then()
-		.log()
-		.all()
 		.statusCode(200);
 	}
 	
@@ -41,8 +39,6 @@ public class FirstSerenityTest {
 		.when()
 		.get("/list")
 		.then()
-		.log()
-		.all()
 		.statusCode(500);
 	}
 	
@@ -87,8 +83,6 @@ public class FirstSerenityTest {
 		.when()
 		.get("/list")
 		.then()
-		.log()
-		.all()
 		.statusCode(200);
 	}
 

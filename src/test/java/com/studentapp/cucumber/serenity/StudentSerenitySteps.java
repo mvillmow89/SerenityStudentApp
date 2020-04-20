@@ -51,7 +51,6 @@ public class StudentSerenitySteps {
 		
 		return SerenityRest.rest().given()
 				.spec(ReusableSpecifications.getGenericRequestSpec())
-				.log().all()
 				.when().body(student).put("/"+studentId).then();
 	}
 	

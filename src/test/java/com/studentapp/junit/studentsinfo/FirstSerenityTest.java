@@ -23,7 +23,8 @@ public class FirstSerenityTest {
 	public static void init() {
 		RestAssured.baseURI="http://localhost:8080/student";
 	}
-	
+
+	@Ignore
 	@Test
 	public void getAllStudents() {
 		SerenityRest.given()
@@ -32,7 +33,8 @@ public class FirstSerenityTest {
 		.then()
 		.statusCode(200);
 	}
-	
+
+	@Ignore
 	@Test
 	public void thisIsaFail() {
 		SerenityRest.given()
@@ -41,7 +43,8 @@ public class FirstSerenityTest {
 		.then()
 		.statusCode(500);
 	}
-	
+
+	@Ignore
 	@Pending
 	@Test
 	public void thisIsAPendingTest() {
@@ -53,19 +56,22 @@ public class FirstSerenityTest {
 	public void thisIsAnIgnoredTest() {
 		
 	}
-	
+
+	@Ignore
 	@Test
 	public void thisIsAnErrorTest() {
 		System.out.println("This is an error " + (5/0));
 	}
-	
+
+	@Ignore
 	@Test
 	public void FileNotFoundTest() throws FileNotFoundException {
 		File file = new File("c://file.txt");
 		FileReader fr = new FileReader(file);
 		file.exists();
 	}
-	
+
+	@Ignore
 	@Test
 	public void thisIsACompromisedTest() throws Exception {
 		throw new Exception();
@@ -75,7 +81,8 @@ public class FirstSerenityTest {
 	@Test
 	public void thisIsAManualTest() {
 	}
-	
+
+	@Ignore
 	@Title("Get List of All Student Information from Student App")
 	@Test
 	public void gtest01() {

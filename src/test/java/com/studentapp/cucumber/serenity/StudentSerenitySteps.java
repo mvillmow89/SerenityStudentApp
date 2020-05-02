@@ -6,7 +6,6 @@ import java.util.List;
 import com.studentapp.model.StudentClass;
 import com.studentapp.utils.ReusableSpecifications;
 
-import io.restassured.http.ContentType;
 import io.restassured.response.ValidatableResponse;
 import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Step;
@@ -32,6 +31,13 @@ public class StudentSerenitySteps {
 		return SerenityRest.rest().given().when()
 				.get("/list").then().statusCode(200)
 				.extract().path("findAll{it.firstName=='" + firstName + "'}.get(0)");
+	}
+	
+	@Step//("Getting Student Information Using Email Id: {0}")
+	public HashMap<String, Object> getStudentInfoByEmailId(String email) {
+		return SerenityRest.rest().given().when()
+				.get("/list").then().statusCode(200)
+				.extract().path("findAll{it.email=='" + email + "'}.get(0)");
 	}
 	
 	@Step("Getting student information with StudentID:{0}")

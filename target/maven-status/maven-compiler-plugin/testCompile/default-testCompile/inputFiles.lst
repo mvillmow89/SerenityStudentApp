@@ -1,8 +1,6 @@
 C:\Users\Melissa\eclipse-workspace\StudentApp\src\test\java\com\studentapp\utils\ReusableSpecifications.java
 C:\Users\Melissa\eclipse-workspace\StudentApp\src\test\java\com\studentapp\cucumber\serenity\StudentSerenitySteps.java
-C:\Users\Melissa\eclipse-workspace\StudentApp\src\test\java\com\studentapp\junit\studentsinfo\FirstSerenityTest.java
-C:\Users\Melissa\eclipse-workspace\StudentApp\src\test\java\com\studentapp\junit\studentsinfo\CreateStudentDataDriven.java
+C:\Users\Melissa\eclipse-workspace\StudentApp\src\test\java\com\studentapp\cucumber\StudentRunner.java
 C:\Users\Melissa\eclipse-workspace\StudentApp\src\test\java\com\studentapp\utils\TestUtils.java
-C:\Users\Melissa\eclipse-workspace\StudentApp\src\test\java\com\studentapp\junit\studentsinfo\TagsTest.java
-C:\Users\Melissa\eclipse-workspace\StudentApp\src\test\java\com\studentapp\junit\studentsinfo\StudentCRUDTest.java
+C:\Users\Melissa\eclipse-workspace\StudentApp\src\test\java\com\studentapp\cucumber\steps\StudentSteps.java
 C:\Users\Melissa\eclipse-workspace\StudentApp\src\test\java\com\studentapp\testbase\TestBase.java
